@@ -1,92 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Change Case Chrome Extension</title>
+    <title>Política de Privacidade / Privacy Policy — Change Case</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 15px;
+            color: #1e293b;
+            max-width: 820px;
+            margin: 30px auto;
+            padding: 0 20px;
+            background-color: #ffffff;
         }
-        h1, h2 {
-            color: #222;
+        .header-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 15px;
         }
         h1 {
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+            color: #0f172a;
+            font-size: 24px;
+            margin: 0;
+            line-height: 1.3;
         }
-        strong {
-            color: #000;
+        h2 {
+            color: #0f172a;
+            font-size: 18px;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 6px;
+        }
+        .lang-switch {
+            display: inline-flex;
+            background: #f1f5f9;
+            padding: 4px;
+            border-radius: 8px;
+            border: 1px solid #cbd5e1;
+        }
+        .lang-btn {
+            border: none;
+            background: transparent;
+            padding: 6px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #64748b;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .lang-btn.active {
+            background: #0284c7;
+            color: #ffffff;
+            box-shadow: 0 2px 4px rgba(2, 132, 199, 0.3);
+        }
+        .highlight-box {
+            background: #f0fdf4;
+            border-left: 4px solid #16a34a;
+            padding: 14px 18px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 14.5px;
+            color: #166534;
         }
         ul {
-            padding-left: 20px;
+            padding-left: 22px;
         }
         li {
             margin-bottom: 8px;
         }
+        code {
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+            color: #0369a1;
+        }
         a {
-            color: #0366d6;
+            color: #0284c7;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
+        footer {
+            margin-top: 45px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 13px;
+            color: #64748b;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Privacy Policy for the Extension:<br> "Change Case Chrome Extension"</h1>
+    <div class="header-bar">
+        <h1 id="main-title">Política de Privacidade — Change Case</h1>
+        <div class="lang-switch">
+            <button id="btn-pt" class="lang-btn active" onclick="setLanguage('pt')">Português</button>
+            <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+        </div>
+    </div>
 
-    <p><strong>Last updated:</strong> October 13, 2026</p>
+    <!-- SEÇÃO EM PORTUGUÊS -->
+    <div id="content-pt">
+        <p><strong>Última atualização:</strong> 26 de outubro de 2026</p>
 
-    <p>
-        Your privacy is important to us. This Privacy Policy explains how the Google Chrome extension "Change Case Chrome Extension" (hereinafter referred to as the "Extension") handles your information.
-    </p>
+        <div class="highlight-box">
+            <strong>Resumo de Privacidade:</strong> A extensão <strong>Change Case</strong> opera de forma 100% local e offline. Não há coleta, rastreamento, transmissão nem armazenamento de nenhum dado pessoal, texto selecionado ou conteúdo da área de transferência em servidores externos.
+        </div>
 
-    <h2>1. Data Collection and Use</h2>
-    <p>
-        <strong>The Extension does not collect, store, transmit, track, or share any personal, browsing, or clipboard data of the user.</strong>
-    </p>
-    <p>
-        The functionality of the Extension is performed entirely within your local browser. It is designed strictly for text formatting and case conversions (Sentence case, Title Case, UPPERCASE, lowercase, CONSTANT_CASE, PascalCase, camelCase, snake_case, dot.case, param-case, and accent removal).
-    </p>
-    <p>
-        No text from your clipboard or web page selections is ever sent to external servers, cloud databases, analytics services, or third parties.
-    </p>
+        <h2>1. Visão Geral e Princípios</h2>
+        <p>
+            A extensão <strong>Change Case</strong>, desenvolvida por <strong>Rodrigo Peçanha</strong>, tem como objetivo único transformar a capitalização e a formatação de textos (como Sentence case, Title Case, UPPERCASE, lowercase, CONSTANT_CASE, PascalCase, camelCase, snake_case, dot.case, param-case, Title-Kebab-Case Chicago e remoção de acentos).
+        </p>
+        <p>
+            O tratamento de dados foi concebido sob a premissa de <em>Privacidade por Padrão (Privacy by Design)</em>: nenhuma informação trafega pela rede e todas as manipulações ocorrem na memória volátil do navegador.
+        </p>
 
-    <h2>2. Required Permissions</h2>
-    <p>
-        To function correctly, the Extension requests the following permissions in Google Chrome:
-    </p>
-    <ul>
-        <li><strong>clipboardRead &amp; clipboardWrite:</strong> Essential for reading text currently copied to your clipboard and writing the formatted text back to your operating system's clipboard.</li>
-        <li><strong>contextMenus:</strong> Allows displaying conversion options in the right-click menu when you select text on any web page.</li>
-        <li><strong>scripting &amp; activeTab:</strong> Used strictly upon explicit user interaction (keyboard shortcut or context menu click) to read the selected text on the active tab and insert the converted text directly into editable form fields, or display a brief visual confirmation toast. Operates exclusively on the active tab and never runs in the background without user action.</li>
-    </ul>
+        <h2>2. Coleta e Uso de Informações</h2>
+        <ul>
+            <li><strong>Área de Transferência (Clipboard):</strong> Ao acionar uma conversão pelo popup da extensão, o texto existente é temporariamente lido, transformado para o formato escolhido e copiado de volta. O texto não é salvo em disco nem gravado em logs.</li>
+            <li><strong>Seleção de Texto em Páginas:</strong> Ao acionar a conversão pelo menu de contexto (clique direito) ou por atalho de teclado, a extensão lê apenas o texto selecionado na aba ativa para realizar a substituição no campo editável ou enviar a versão convertida à área de transferência.</li>
+            <li><strong>Zero Telemetria / Analytics:</strong> Não utilizamos Google Analytics, cookies, identificadores exclusivos de dispositivo ou ferramentas de rastreamento de comportamento.</li>
+        </ul>
 
-    <h2>3. Remote Code</h2>
-    <p>
-        The Extension does not load, fetch, or execute any remote code (such as external scripts or WebAssembly). All code runs exclusively from the verified local extension package.
-    </p>
+        <h2>3. Permissões Solicitadas e Justificativas Técnicas</h2>
+        <p>A extensão solicita exclusivamente as permissões essenciais para as suas funções declaradas:</p>
+        <ul>
+            <li><code>clipboardRead</code>: Necessária para ler o texto da área de transferência ao clicar nos botões do popup.</li>
+            <li><code>clipboardWrite</code>: Necessária para gravar o texto com a nova formatação de volta na área de transferência.</li>
+            <li><code>contextMenus</code>: Permite adicionar as opções de formatação no menu de contexto ao selecionar textos em páginas web.</li>
+            <li><code>scripting</code>: Permite inserir o texto formatado diretamente em campos de texto editáveis ou apresentar uma notificação toast de confirmação na tela.</li>
+            <li><code>activeTab</code>: Concede acesso momentâneo estritamente à aba onde o usuário solicitou a conversão, sem acesso permanente ou a outras abas.</li>
+        </ul>
 
-    <h2>4. Changes to this Privacy Policy</h2>
-    <p>
-        We may update our Privacy Policy from time to time. Any changes will be posted on this page. You are advised to review this page periodically to stay informed.
-    </p>
+        <h2>4. Ausência de Código Remoto e Terceiros</h2>
+        <ul>
+            <li>A extensão <strong>não carrega nem executa código remoto</strong>, cumprindo rigorosamente as diretrizes do Google Chrome Manifest V3.</li>
+            <li>Todo o código-fonte e scripts utilitários estão estritamente contidos e empacotados localmente na extensão.</li>
+            <li>Nenhum dado é compartilhado, vendido ou transferido a terceiros ou redes de publicidade.</li>
+        </ul>
 
-    <h2>5. Contact</h2>
-    <p>
-        If you have any questions about this Privacy Policy, please contact us:
-    </p>
-    <p>
-        <strong>Rodrigo Peçanha</strong><br>
-        Email: <a href="mailto:rodrigopecanha83@gmail.com">rodrigopecanha83@gmail.com</a>
-    </p>
+        <h2>5. Retenção e Exclusão</h2>
+        <p>
+            A extensão não mantém histórico de conversões ou banco de dados persistente. Todos os dados são efêmeros. Ao desinstalar a extensão, nenhum dado residual permanece no navegador ou no sistema operacional.
+        </p>
 
+        <h2>6. Contato e Responsabilidade</h2>
+        <p>
+            Em caso de dúvidas ou sugestões a respeito desta Política de Privacidade, entre em contato através do GitHub:
+            <br>
+            <a href="https://github.com/rodrigopecanha83" target="_blank" rel="noopener noreferrer">https://github.com/rodrigopecanha83</a>
+        </p>
+    </div>
+
+    <!-- SEÇÃO EM INGLÊS -->
+    <div id="content-en" style="display: none;">
+        <p><strong>Last updated:</strong> October 26, 2026</p>
+
+        <div class="highlight-box">
+            <strong>Privacy Summary:</strong> The <strong>Change Case</strong> extension operates 100% locally and offline. It does not collect, track, transmit, or store any personal data, selected text, or clipboard content on external servers.
+        </div>
+
+        <h2>1. Overview and Principles</h2>
+        <p>
+            The <strong>Change Case</strong> extension, developed by <strong>Rodrigo Peçanha</strong>, is solely designed for text capitalization and case formatting (such as Sentence case, Title Case, UPPERCASE, lowercase, CONSTANT_CASE, PascalCase, camelCase, snake_case, dot.case, param-case, Title-Kebab-Case Chicago, and accent removal).
+        </p>
+        <p>
+            Data handling follows strict <em>Privacy by Design</em> principles: no information travels over the network, and all operations occur within your browser's volatile memory.
+        </p>
+
+        <h2>2. Data Collection and Usage</h2>
+        <ul>
+            <li><strong>Clipboard:</strong> When you trigger a conversion through the popup window, existing clipboard text is temporarily read, transformed into the desired casing style, and copied back. Text is never logged or saved to persistent storage.</li>
+            <li><strong>Page Selection:</strong> When converting text via right-click context menu or keyboard shortcuts, the extension reads only the active highlighted text to replace it in editable inputs or copy the formatted version to the clipboard.</li>
+            <li><strong>Zero Telemetry / Analytics:</strong> We do not use Google Analytics, cookies, device identifiers, or tracking scripts.</li>
+        </ul>
+
+        <h2>3. Requested Permissions and Technical Justifications</h2>
+        <p>The extension requests only permissions strictly necessary for its advertised functionality:</p>
+        <ul>
+            <li><code>clipboardRead</code>: Required to read the text currently in your clipboard when conversion buttons are clicked in the popup.</li>
+            <li><code>clipboardWrite</code>: Required to write the transformed text back into your operating system clipboard.</li>
+            <li><code>contextMenus</code>: Allows adding convenient case conversion options to the browser's right-click context menu on selected text.</li>
+            <li><code>scripting</code>: Used to insert formatted text directly into active editable fields or display a subtle on-screen toast confirmation.</li>
+            <li><code>activeTab</code>: Grants temporary access strictly to the single tab where the user invoked the action, without persistent browsing surveillance.</li>
+        </ul>
+
+        <h2>4. Absence of Remote Code and Third Parties</h2>
+        <ul>
+            <li>The extension <strong>does not load or execute remote code</strong>, strictly adhering to Google Chrome's Manifest V3 security standards.</li>
+            <li>All logic and utility scripts are bundled entirely within the local extension package.</li>
+            <li>No data is ever sold, transferred, or shared with third parties or advertising networks.</li>
+        </ul>
+
+        <h2>5. Retention and Deletion</h2>
+        <p>
+            The extension does not retain conversion history or employ persistent local databases. All data transformations are ephemeral. Uninstalling the extension leaves zero residual data.
+        </p>
+
+        <h2>6. Contact and Responsibility</h2>
+        <p>
+            If you have questions or inquiries regarding this Privacy Policy, please reach out via GitHub:
+            <br>
+            <a href="https://github.com/rodrigopecanha83" target="_blank" rel="noopener noreferrer">https://github.com/rodrigopecanha83</a>
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Change Case — Developed by Rodrigo Peçanha.</p>
+    </footer>
+
+    <script>
+        function setLanguage(lang) {
+            const ptContent = document.getElementById('content-pt');
+            const enContent = document.getElementById('content-en');
+            const btnPt = document.getElementById('btn-pt');
+            const btnEn = document.getElementById('btn-en');
+            const title = document.getElementById('main-title');
+
+            if (lang === 'en') {
+                ptContent.style.display = 'none';
+                enContent.style.display = 'block';
+                btnPt.classList.remove('active');
+                btnEn.classList.add('active');
+                title.textContent = 'Privacy Policy — Change Case';
+                document.title = 'Privacy Policy — Change Case';
+                localStorage.setItem('change_case_privacy_lang', 'en');
+            } else {
+                ptContent.style.display = 'block';
+                enContent.style.display = 'none';
+                btnPt.classList.add('active');
+                btnEn.classList.remove('active');
+                title.textContent = 'Política de Privacidade — Change Case';
+                document.title = 'Política de Privacidade — Change Case';
+                localStorage.setItem('change_case_privacy_lang', 'pt');
+            }
+        }
+
+        const savedLang = localStorage.getItem('change_case_privacy_lang');
+        if (savedLang === 'en' || (!savedLang && !navigator.language.startsWith('pt'))) {
+            setLanguage('en');
+        } else {
+            setLanguage('pt');
+        }
+    </script>
 </body>
 </html>
