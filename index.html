@@ -1,80 +1,193 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Políticas de Privacidade - Rodrigo Peçanha</title>
+    <title>Privacy Policies — Rodrigo Peçanha</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
+            color: #1e293b;
+            max-width: 860px;
             margin: 40px auto;
-            padding: 0 15px;
+            padding: 0 20px;
+            background-color: #f8fafc;
+        }
+        header {
             text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #e2e8f0;
         }
         h1 {
-            color: #222;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+            color: #0f172a;
+            font-size: 30px;
+            margin: 0 0 10px 0;
+            letter-spacing: -0.5px;
+        }
+        header p {
+            color: #64748b;
+            font-size: 16px;
+            margin: 0;
+        }
+        .intro-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px 24px;
             margin-bottom: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            font-size: 15px;
+            color: #334155;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .policy-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
         }
-        li {
-            margin-bottom: 15px;
-        }
-        a {
+        .policy-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 22px 26px;
             text-decoration: none;
-            color: #007bff;
-            font-size: 1.1em;
-            padding: 10px 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            display: inline-block;
-            transition: background-color 0.2s, color 0.2s;
+            color: inherit;
+            display: block;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
         }
-        a:hover {
-            background-color: #007bff;
-            color: #fff;
+        .policy-card:hover {
+            transform: translateY(-2px);
+            border-color: #0284c7;
+            box-shadow: 0 6px 16px rgba(2, 132, 199, 0.12);
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0;
+        }
+        .badge {
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+        .badge-en {
+            background: #e0f2fe;
+            color: #0369a1;
+        }
+        .badge-pt {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .card-desc {
+            font-size: 14.5px;
+            color: #64748b;
+            margin: 0;
+            line-height: 1.5;
         }
         footer {
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #777;
+            margin-top: 60px;
+            padding-top: 25px;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            font-size: 13.5px;
+            color: #94a3b8;
+        }
+        footer a {
+            color: #0284c7;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Políticas de Privacidade</h1>
-        <p>Programas, Scripts e Extensões Desenvolvidas por Rodrigo Peçanha</p>
+        <h1>Privacy Policies</h1>
+        <p>Software, Extensions and Tools Developed by Rodrigo Peçanha</p>
     </header>
 
     <main>
-        <p>Selecione um item abaixo para ler sua respectiva política de privacidade.</p>
-        
-        <ul>
-            <li>
-                <a href="Extensao-CopiarExterno-1Doc.html">Extensão Chrome: "Copiar o Código Externo do 1Doc"</a>
-            </li>
-            <li>
-                <a href="Extensao-PlusCode-GoogleMaps.html">Extensão Chrome: "Copiar Plus Code do Google Maps"</a>
-            </li>
-            <li>
-                <a href="Change-Case-Privacy.html">Change Case — Extensão de Conversão de Texto</a>
-            </li>
-            <li><a href="ScreenShot-Turbo-Privacy.html">ScreenShot Turbo</a>
-            </li>
-        </ul>
+        <div class="intro-card">
+            Welcome to the official privacy portal. All applications listed below are engineered with a strict <strong>Privacy-First</strong> philosophy: zero personal data collection, zero third-party telemetry, zero external servers, and strictly local, in-browser execution.
+        </div>
+
+        <div class="policy-grid">
+            <!-- 1. Plus Code Google Maps -->
+            <a href="PlusCode-GoogleMaps.html" class="policy-card">
+                <div class="card-header">
+                    <h2 class="card-title">Copy Google Maps Plus Code</h2>
+                    <span class="badge badge-en">English / Multilingual</span>
+                </div>
+                <p class="card-desc">
+                    Chrome Extension that reads GPS coordinates (latitude, longitude) from the clipboard, generates the corresponding Open Location Code (Plus Code) locally, and copies it back with visual toast confirmation.
+                </p>
+            </a>
+
+            <!-- 2. Change Case -->
+            <a href="Change-Case-Privacy.html" class="policy-card">
+                <div class="card-header">
+                    <h2 class="card-title">Change Case</h2>
+                    <span class="badge badge-en">English / Multilingual</span>
+                </div>
+                <p class="card-desc">
+                    Text conversion Chrome extension with 12 distinct casing styles (UPPERCASE, lowercase, Title Case, Chicago Style, kebab-case, CamelCase, etc.) and instant clipboard integration.
+                </p>
+            </a>
+
+            <!-- 3. ScreenShot Turbo -->
+            <a href="ScreenShot-Turbo-Privacy.html" class="policy-card">
+                <div class="card-header">
+                    <h2 class="card-title">ScreenShot Turbo</h2>
+                    <span class="badge badge-en">English / Multilingual</span>
+                </div>
+                <p class="card-desc">
+                    One-click screen capture extension designed to take immediate PNG screenshots of the visible browser area and download them automatically without user friction.
+                </p>
+            </a>
+
+            <!-- 4. Cadastro de Coordenadas (Uso Interno) -->
+            <a href="Cadastro-de-Coordenadas-Privacy.html" class="policy-card">
+                <div class="card-header">
+                    <h2 class="card-title">Coordenadas do Cadastro</h2>
+                    <span class="badge badge-pt">Português — Uso Pessoal</span>
+                </div>
+                <p class="card-desc">
+                    Extensão para consulta, cadastro e higienização de coordenadas geográficas de imóveis vinculadas a inscrições imobiliárias via armazenamento local (ferramenta interna).
+                </p>
+            </a>
+
+            <!-- 5. Copiar Código Externo 1Doc -->
+            <a href="Extensao-CopiarExterno-1Doc.html" class="policy-card">
+                <div class="card-header">
+                    <h2 class="card-title">Copiar Código Externo 1Doc</h2>
+                    <span class="badge badge-pt">Português — Uso Pessoal</span>
+                </div>
+                <p class="card-desc">
+                    Extensão utilitária para localização e cópia automatizada do número de processo externo em páginas do sistema 1Doc.
+                </p>
+            </a>
+        </div>
     </main>
-    
+
     <footer>
-        <p>&copy; 2025 Rodrigo Peçanha. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Rodrigo Peçanha. All rights reserved. &bull; <a href="https://github.com/rodrigopecanha83" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
     </footer>
 
 </body>

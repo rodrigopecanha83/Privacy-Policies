@@ -246,12 +246,12 @@
             }
         }
 
-        // Recupera idioma prévio do navegador ou salvo
+        // Recupera idioma prévio salvo
         const savedLang = localStorage.getItem('screenshot_turbo_lang');
-        if (savedLang === 'en' || (!savedLang && !navigator.language.startsWith('pt'))) {
-            setLanguage('en');
-        } else {
+        if (savedLang === 'pt') {
             setLanguage('pt');
+        } else {
+            setLanguage('en');
         }
     </script>
 </body>

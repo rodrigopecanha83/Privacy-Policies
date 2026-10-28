@@ -252,10 +252,10 @@
         }
 
         const savedLang = localStorage.getItem('change_case_privacy_lang');
-        if (savedLang === 'en' || (!savedLang && !navigator.language.startsWith('pt'))) {
-            setLanguage('en');
-        } else {
+        if (savedLang === 'pt') {
             setLanguage('pt');
+        } else {
+            setLanguage('en');
         }
     </script>
 </body>

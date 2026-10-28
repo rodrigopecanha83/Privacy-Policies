@@ -1,91 +1,272 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade - Extensão Copiar Plus Code</title>
+    <title>Privacy Policy / Política de Privacidade — Plus Code Google Maps</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 15px;
+            color: #1e293b;
+            max-width: 820px;
+            margin: 30px auto;
+            padding: 0 20px;
+            background-color: #ffffff;
         }
-        h1, h2 {
-            color: #222;
+        .header-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 15px;
         }
         h1 {
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+            color: #0f172a;
+            font-size: 24px;
+            margin: 0;
+            line-height: 1.3;
         }
-        strong {
-            color: #000;
+        h2 {
+            color: #0f172a;
+            font-size: 18px;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 6px;
+        }
+        .lang-switch {
+            display: inline-flex;
+            background: #f1f5f9;
+            padding: 4px;
+            border-radius: 8px;
+            border: 1px solid #cbd5e1;
+        }
+        .lang-btn {
+            border: none;
+            background: transparent;
+            padding: 6px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #64748b;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .lang-btn.active {
+            background: #0284c7;
+            color: #ffffff;
+            box-shadow: 0 2px 4px rgba(2, 132, 199, 0.3);
+        }
+        .highlight-box {
+            background: #f0fdf4;
+            border-left: 4px solid #16a34a;
+            padding: 14px 18px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 14.5px;
+            color: #166534;
+        }
+        ul {
+            padding-left: 22px;
+        }
+        li {
+            margin-bottom: 8px;
         }
         code {
-            background-color: #f4f4f4;
-            padding: 2px 4px;
-            border-radius: 3px;
-            font-family: "Courier New", Courier, monospace;
+            background-color: #f1f5f9;
+            color: #0369a1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.9em;
+        }
+        footer {
+            margin-top: 45px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 13px;
+            color: #64748b;
+            text-align: center;
+        }
+        a {
+            color: #0284c7;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 13.5px;
+            font-weight: 500;
         }
     </style>
 </head>
 <body>
 
-    <h1>Política de Privacidade da Extensão:<br> "Copiar Plus Code do Google Maps"</h1>
+    <a href="index.html" class="back-link">&larr; Back to all policies</a>
 
-    <p><strong>Última atualização:</strong> 26 de setembro de 2025</p>
+    <div class="header-bar">
+        <h1 id="main-title">Privacy Policy — Copy Google Maps Plus Code</h1>
+        <div class="lang-switch">
+            <button id="btn-en" class="lang-btn active" onclick="setLanguage('en')">English</button>
+            <button id="btn-pt" class="lang-btn" onclick="setLanguage('pt')">Português</button>
+        </div>
+    </div>
 
-    <p>
-        Esta página informa sobre as políticas relativas ao uso de dados da extensão do Google Chrome "Copiar Plus Code do Google Maps" (doravante "Extensão"). A sua privacidade é a nossa prioridade.
-    </p>
+    <!-- ENGLISH CONTENT (DEFAULT) -->
+    <div id="content-en">
+        <p><strong>Last Updated:</strong> October 28, 2026</p>
 
-    <h2>1. Coleta e Uso de Dados</h2>
-    <p>
-        <strong>A Extensão não coleta, armazena, transmite ou compartilha qualquer tipo de dado pessoal ou de navegação do usuário.</strong>
-    </p>
-    <p>
-        Toda a funcionalidade da Extensão ocorre localmente no seu navegador. O processo é o seguinte:
-    </p>
-    <ol>
-        <li>Ao ser ativada, a Extensão lê o texto que está na sua área de transferência (clipboard).</li>
-        <li>Ela processa esse texto localmente para converter as coordenadas geográficas em um Plus Code.</li>
-        <li>O Plus Code gerado é então copiado de volta para a sua área de transferência, substituindo o conteúdo anterior.</li>
-    </ol>
-    <p>
-        As informações lidas da sua área de transferência são usadas unicamente para essa conversão e são descartadas imediatamente após o uso. Em nenhum momento esses dados são salvos ou enviados para qualquer servidor.
-    </p>
+        <p>
+            This document outlines the privacy practices and data protection commitments for the Google Chrome extension <strong>"Copy Google Maps Plus Code"</strong> (hereinafter referred to as the "Extension").
+        </p>
 
-    <h2>2. Permissões Requeridas</h2>
-    <p>
-        Para executar sua função, a Extensão solicita as seguintes permissões. Explicamos abaixo o motivo de cada uma:
-    </p>
-    <ul>
-        <li>
-            <strong><code>clipboardRead</code>:</strong> Essencial para a função principal. Permite que a Extensão leia as coordenadas geográficas que você copiou para a área de transferência.
-        </li>
-        <li>
-            <strong><code>clipboardWrite</code>:</strong> Permite que a Extensão copie o Plus Code resultante para a sua área de transferência, disponibilizando-o para você.
-        </li>
-        <li>
-            <strong><code>scripting</code> e <code>activeTab</code>:</strong> São necessárias para exibir a pequena notificação de sucesso ("Toast") na aba ativa, confirmando que o código foi copiado.
-        </li>
-        <li>
-            <strong><code>host_permissions: ["<all_urls>"]</code>:</strong> Esta permissão é necessária para que a notificação de confirmação ("toast") possa ser exibida em qualquer página que você esteja visitando ao usar a extensão. A extensão <strong>não lê, não modifica e não coleta nenhuma informação</strong> do conteúdo das páginas que você visita.
-        </li>
-    </ul>
+        <div class="highlight-box">
+            <strong>Key Summary:</strong> The Extension operates 100% locally on your computer. It does not collect, track, transmit, or monetize any personal data, geographic locations, browsing history, or clipboard contents.
+        </div>
 
-    <h2>3. Alterações a esta Política de Privacidade</h2>
-    <p>
-        Esta Política de Privacidade pode ser atualizada ocasionalmente. Todas as alterações serão refletidas nesta página.
-    </p>
+        <h2>1. Single Purpose Policy</h2>
+        <p>
+            The single purpose of this Extension is to allow users to convert geographic coordinates (latitude and longitude) copied to their system clipboard into an official Google Maps Plus Code (Open Location Code) with a single click, automatically copying the result back to the clipboard and displaying an on-screen toast confirmation on the active tab.
+        </p>
 
-    <h2>4. Contato</h2>
-    <p>
-        Se você tiver alguma dúvida sobre esta Política de Privacidade, sinta-se à vontade para entrar em contato.
-    </p><br>-----<br>
-    <p><b>Rodrigo Peçanha</b><br>rodrigopecanha83@gmail.com</p>
+        <h2>2. Data Collection and Processing</h2>
+        <p>
+            The Extension does not operate external application servers, databases, or analytics engines. All computational processes take place entirely in-memory within your local browser:
+        </p>
+        <ul>
+            <li><strong>Clipboard Reading:</strong> Upon the user clicking the extension icon, the Extension inspects text in the clipboard strictly looking for a numeric coordinate pattern (e.g., <code>-22.9068, -43.1729</code>).</li>
+            <li><strong>Local Computation:</strong> Coordinates are decoded and encoded into a Plus Code via the bundled, offline Google OpenLocationCode library.</li>
+            <li><strong>Clipboard Writing:</strong> The resulting Plus Code is copied back to your system clipboard so you can immediately paste it.</li>
+            <li><strong>Zero Retention:</strong> After the conversion completes, the memory buffer is discarded immediately. No coordinate data is ever saved or transmitted.</li>
+        </ul>
 
+        <h2>3. Technical Permissions Justifications</h2>
+        <p>
+            To deliver its features within the Google Chrome Manifest V3 environment, the Extension requests the following minimum set of permissions:
+        </p>
+        <ul>
+            <li><code>clipboardRead</code>: Strictly required to read the latitude and longitude coordinates that the user previously copied to the clipboard, executed exclusively when clicking the extension icon.</li>
+            <li><code>clipboardWrite</code>: Required to automatically write the generated Google Maps Plus Code back to the system clipboard for immediate pasting.</li>
+            <li><code>activeTab</code>: Grants temporary access exclusively to the active tab where the user clicked the action button to display a non-intrusive on-screen toast notification.</li>
+            <li><code>scripting</code>: Executes the conversion routine and injects the ephemeral feedback notification into the active tab on-demand.</li>
+        </ul>
+
+        <h2>4. Absence of Remote Code and Third Parties</h2>
+        <ul>
+            <li>The Extension <strong>does not load or execute remote code</strong>, strictly adhering to Google Chrome's Manifest V3 security policies.</li>
+            <li>All logic, icon assets, and the OpenLocationCode library are bundled locally inside the extension archive.</li>
+            <li>No data is ever sold, transferred, or shared with third parties or advertising networks.</li>
+        </ul>
+
+        <h2>5. Contact and Responsibility</h2>
+        <p>
+            For any questions or inquiries regarding this Privacy Policy, please reach out via GitHub:
+            <br>
+            <a href="https://github.com/rodrigopecanha83" target="_blank" rel="noopener noreferrer">https://github.com/rodrigopecanha83</a>
+        </p>
+    </div>
+
+    <!-- PORTUGUESE CONTENT -->
+    <div id="content-pt" style="display: none;">
+        <p><strong>Última atualização:</strong> 28 de outubro de 2026</p>
+
+        <p>
+            Este documento descreve as práticas de privacidade e proteção de dados da extensão para Google Chrome <strong>"Copiar Plus Code do Google Maps"</strong> (doravante denominada "Extensão").
+        </p>
+
+        <div class="highlight-box">
+            <strong>Resumo Fundamental:</strong> A Extensão funciona 100% de forma local no seu computador. Ela não coleta, não rastreia, não transmite e não monetiza nenhum dado pessoal, localização geográfica, histórico de navegação ou conteúdo da área de transferência.
+        </div>
+
+        <h2>1. Política de Único Propósito</h2>
+        <p>
+            A Extensão tem como único propósito permitir que o usuário converta coordenadas geográficas (latitude e longitude) copiadas na área de transferência em um Plus Code (Open Location Code) do Google Maps com um único clique, copiando o resultado de volta e exibindo um aviso visual (toast) na aba ativa.
+        </p>
+
+        <h2>2. Coleta e Processamento de Dados</h2>
+        <p>
+            A Extensão não possui servidores externos, bancos de dados ou ferramentas de métricas. Todo o processamento ocorre inteiramente em memória no seu navegador:
+        </p>
+        <ul>
+            <li><strong>Leitura da Área de Transferência:</strong> Ao clicar no ícone da extensão, ela inspeciona o texto do clipboard estritamente à procura do padrão numérico de coordenadas (ex: <code>-22.9068, -43.1729</code>).</li>
+            <li><strong>Cálculo Local:</strong> As coordenadas são processadas pela biblioteca oficial OpenLocationCode empacotada localmente e de forma offline.</li>
+            <li><strong>Gravação no Clipboard:</strong> O Plus Code resultante é copiado para a área de transferência para colagem imediata.</li>
+            <li><strong>Zero Retenção:</strong> Após a conclusão da conversão, as informações são descartadas da memória imediatamente. Nenhum dado é salvo ou enviado a servidores.</li>
+        </ul>
+
+        <h2>3. Justificativas Técnicas de Permissões</h2>
+        <p>
+            Para executar suas funções no ambiente Manifest V3 do Google Chrome, a Extensão requer apenas o conjunto mínimo de permissões:
+        </p>
+        <ul>
+            <li><code>clipboardRead</code>: Necessária exclusivamente para ler as coordenadas geográficas copiadas previamente pelo usuário no momento em que ele clica no ícone.</li>
+            <li><code>clipboardWrite</code>: Necessária para gravar automaticamente o Plus Code gerado na área de transferência.</li>
+            <li><code>activeTab</code>: Concede acesso temporário exclusivamente à aba em que o usuário acionou a extensão para exibir o toast visual de confirmação.</li>
+            <li><code>scripting</code>: Executa pontualmente a rotina de conversão e a injeção do aviso na tela sob demanda do usuário.</li>
+        </ul>
+
+        <h2>4. Ausência de Código Remoto e Terceiros</h2>
+        <ul>
+            <li>A Extensão <strong>não carrega nem executa código remoto</strong>, em total conformidade com as diretrizes do Manifest V3 da Chrome Web Store.</li>
+            <li>Toda a lógica e bibliotecas estão 100% empacotadas no arquivo local da extensão.</li>
+            <li>Nenhum dado é comercializado, compartilhado ou transferido para terceiros ou anunciantes.</li>
+        </ul>
+
+        <h2>5. Contato e Responsabilidade</h2>
+        <p>
+            Para dúvidas ou esclarecimentos sobre esta Política de Privacidade, entre em contato via GitHub:
+            <br>
+            <a href="https://github.com/rodrigopecanha83" target="_blank" rel="noopener noreferrer">https://github.com/rodrigopecanha83</a>
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Copy Google Maps Plus Code — Developed by Rodrigo Peçanha.</p>
+    </footer>
+
+    <script>
+        function setLanguage(lang) {
+            const ptContent = document.getElementById('content-pt');
+            const enContent = document.getElementById('content-en');
+            const btnPt = document.getElementById('btn-pt');
+            const btnEn = document.getElementById('btn-en');
+            const title = document.getElementById('main-title');
+
+            if (lang === 'pt') {
+                ptContent.style.display = 'block';
+                enContent.style.display = 'none';
+                btnPt.classList.add('active');
+                btnEn.classList.remove('active');
+                title.textContent = 'Política de Privacidade — Copiar Plus Code do Google Maps';
+                document.title = 'Política de Privacidade — Copiar Plus Code do Google Maps';
+                localStorage.setItem('plus_code_privacy_lang', 'pt');
+            } else {
+                ptContent.style.display = 'none';
+                enContent.style.display = 'block';
+                btnPt.classList.remove('active');
+                btnEn.classList.add('active');
+                title.textContent = 'Privacy Policy — Copy Google Maps Plus Code';
+                document.title = 'Privacy Policy — Copy Google Maps Plus Code';
+                localStorage.setItem('plus_code_privacy_lang', 'en');
+            }
+        }
+
+        const savedLang = localStorage.getItem('plus_code_privacy_lang');
+        if (savedLang === 'pt') {
+            setLanguage('pt');
+        } else {
+            setLanguage('en');
+        }
+    </script>
 </body>
 </html>
